@@ -1,0 +1,42 @@
+kubernetes-sigs/kind
+jmespath/jp
+koalaman/shellcheck
+wercker/stern
+owenthereal/upterm
+ryane/kfilt
+homeport/dyff
+twpayne/chezmoi -a chezmoi-linux-amd64
+argoproj/argo-cd --to argocd
+barnybug/cli53
+zyedidia/eget
+fullstorydev/grpcurl
+argoproj-labs/argocd-autopilot --to argocd-autopilot
+browsh-org/browsh -a browsh_1.8.0_linux_amd64
+operator-framework/operator-sdk -a operator-sdk_linux_amd64 --to operator-sdk
+operator-framework/operator-sdk -a ansible-operator_linux_amd64 --to ansible-operator
+derailed/k9s
+sigstore/rekor -a rekor-cli-linux-amd64
+kubevirt/kubevirt --to virtctl
+kubernetes/minikube -a minikube-linux-amd64
+FairwindsOps/polaris
+99designs/aws-vault
+rclone/rclone -a zip
+restic/restic
+stedolan/jq
+filosottile/age
+filosottile/age -f age-keygen --to age-keygen
+filosottile/mkcert
+mozilla/sops
+muesli/duf -a tar.gz
+mikefarah/yq --to yyq -a yq_linux_amd64
+junegunn/fzf
+zyedidia/micro -a linux64.tar.gz
+jgm/pandoc
+ogham/exa -a ^musl
+sharkdp/fd -a ^musl
+aquasecurity/trivy -a Linux-64bit.tar.gz -a ^pem -a ^sig
+
+# eget is unable to determine the latest version of
+# the following packages so we need to provide explicit
+# tags
+kubernetes-sigs/kustomize -t kustomize/v4.5.7
